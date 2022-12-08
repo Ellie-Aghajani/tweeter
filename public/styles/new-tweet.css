@@ -3,7 +3,8 @@
 }
 hr{
     border-style: solid;
-    border-width: 2px;
+    border-bottom: none;
+    border-width: 5px;
 }
 .submit-tweet{
     display: flex;
@@ -17,4 +18,49 @@ hr{
 }
 .lable-tweet{
     font-family: sans-serif;
+}
+textarea {
+    margin-top: 20px;
+    border: none;
+    background-color: #f4f1ec;
+    border-bottom: 4px #545149 solid;
+    height: 40px;
+    width: 100%;
+    resize: none;
+    font-weight: bold;
+    color: #545149;
+}
+
+.all-tweets-container {
+    border: solid black;
+    width: 98%;
+    margin: auto;
+    padding: 20px;
+}
+.all-tweets-container:hover{
+    box-shadow: 0px 0px 11px 11px rgb(7, 158, 115);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-regular{
+    padding-right: 10px;
+}
+#tweet-id{
+    color: gray;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-solid:hover{
+    color: #b59d26;
 }
