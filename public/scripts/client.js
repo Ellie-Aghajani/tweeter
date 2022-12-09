@@ -11,31 +11,31 @@ $(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
-  const createTweetElement = function(tweet){
-    let tweet = `
-    <article class="tweets">
-      <header class="tweet-container">
-        <div class="tweet-header">
-          <img src="${tweet.user.avatars}" />
-          <p>${tweet.user.name}</p>
-        </div>
-        <p class="user-tag">${tweet.user.handle}</p>
-      </header>
-      <div class="tweet-container">
-        <p class="content">${escape(tweet.content.text)}</p>
-      </div>
-      <footer class="tweet-container">
-        <p>${moment(tweet.created_at).fromNow()}</p>
-        <div>
-          <i class="far fa-flag" id="flag"></i>
-          <i class="far fa-heart" id="heart"></i>
-          <i class="fas fa-retweet" id="retweet"></i>
-        </div>
-      </footer>
-    </article>
-`;
+  const createTweetElement = function (tweet) {
+    let tweetHTML = `
+      <article class="tweets">
+          <header class="tweet-container">
+            <div class="tweet-header">
+              <img src="${tweet.user.avatars}" />
+              <p>${tweet.user.name}</p>
+            </div>
+            <p class="user-tag">${tweet.user.handle}</p>
+          </header>
+          <div class="tweet-container">
+            <p class="content">${escape(tweet.content.text)}</p>
+          </div>
+          <footer class="tweet-container">
+            <p>${moment(tweet.created_at).fromNow()}</p>
+            <div>
+              <i class="far fa-flag" id="flag"></i>
+              <i class="far fa-heart" id="heart"></i>
+              <i class="fas fa-retweet" id="retweet"></i>
+            </div>
+          </footer>
+        </article>
+      `;
 
-    return tweet;   
+    return tweetHTML; 
   };
 
   const loadTweets = function () {
