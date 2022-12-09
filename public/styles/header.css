@@ -1,6 +1,7 @@
 .main-header {
-    color: #FFFFFF;
-    background-color: #d8ef86;
+    color: #00910a;
+    background-color: #e8b706;
+    background-image: url(/images/3px-tile.png);
     font-family: 'Source Sans Pro';
     font-size: 1em;
     min-height: 490px;
